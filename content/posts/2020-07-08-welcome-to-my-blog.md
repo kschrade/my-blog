@@ -1,7 +1,7 @@
 ---
 template: post
 title: Welcome to my Blog!
-slug: welcome-1
+slug: welcome
 draft: false
 date: 2020-07-08T21:46:54.976Z
 description: "Welcome to my blog! "
