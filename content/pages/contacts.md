@@ -3,7 +3,7 @@ template: page
 title: Contact me
 socialImage: /media/image-4.jpg
 slug: contacts
-draft: true
+draft: false
 ---
 Here are all the ways to contact me!
 
