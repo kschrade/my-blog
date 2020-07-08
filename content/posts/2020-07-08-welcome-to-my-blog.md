@@ -7,9 +7,10 @@ date: 2020-07-08T21:46:54.976Z
 description: "Welcome to my blog! "
 category: non-tech
 tags:
-  - welcome non-tech
+  - welcome
+  - non-tech
 ---
-<iframe src="https://giphy.com/embed/8qr5b7fs7JqxrvEOzH" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/8qr5b7fs7JqxrvEOzH">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/8qr5b7fs7JqxrvEOzH" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/8qr5b7fs7JqxrvEOzH"></a></p>
 
 Hello Everyone!
 
