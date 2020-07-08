@@ -1,7 +1,7 @@
 ---
 template: post
 slug: a-brief-history-of-typography
-draft: true
+draft: false
 socialImage: /media/image-0.jpg
 title: A Brief History of Typography
 date: 2016-02-02T22:40:32.169Z
