@@ -2,7 +2,7 @@
 template: page
 title: About me
 socialImage: /media/image-2.jpg
-slug: about-me
+slug: about
 draft: false
 ---
 ## Who am I?
