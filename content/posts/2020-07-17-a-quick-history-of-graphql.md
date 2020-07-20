@@ -2,7 +2,7 @@
 template: post
 title: Why use GraphQL?
 slug: why-use-graphql
-draft: true
+draft: false
 date: 2020-07-20T20:07:26.017Z
 description: Why use GraphQL? I will recap the RFC I presented StockX
   engineering on GraphQL!
