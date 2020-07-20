@@ -31,7 +31,7 @@ In RESTful api you get everything, every time. In GraphQL you must define your q
 
 ## Easier and more defined interfaces
 
-
+In an RESTful world you have your base urls, say http://www.restful.com/api/v1, and then you start adding your resources. When we add the resource we have http://www.restful.com/api/v1/resource. 
 
 ## Better client performance
 
