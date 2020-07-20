@@ -37,7 +37,7 @@ In an RESTful world you have your base urls, say http://www.restful.com/api/v1, 
 
 ## Better client performance
 
-Along with the smaller payloads mentioned before the round trips to the server are reduced as well. In a RESTful world you would request a resource, that resource will give you IDs to then go to another resource and get the information for those requests. 
+Along with the smaller payloads mentioned before the round trips to the server are reduced as well. In a RESTful world you would request a resource, that resource will give you IDs to then go to another resource and get the information for those requests. This is also client to server requests which normally are not in close proximity. 
 
 ## Less Developer Time spent navigating APIs
 
