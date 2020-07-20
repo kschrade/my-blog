@@ -11,6 +11,8 @@ tags:
   - GraphQL
   - Tech
 ---
+\[intro]
+
 # What is GraphQL?
 
 From the [GraphQL website](https://graphql.org/learn/):
@@ -31,12 +33,16 @@ In RESTful api you get everything, every time. In GraphQL you must define your q
 
 ## Easier and more defined interfaces
 
-In an RESTful world you have your base urls, say http://www.restful.com/api/v1, and then you start adding your resources. When we add the resource we have http://www.restful.com/api/v1/resource. 
+In an RESTful world you have your base urls, say http://www.restful.com/api/v1, and then you start adding your resources. When we add the resource, we will use posts for this example, we have http://www.restful.com/api/v1/posts. That url will return an array of posts. This works great until we start adding query params on this because we need a little more data. So if we want to include authors this can turn into api/v1/posts?include=author but then another use case pops up where we need to sort the posts. then that becomes api/v1/posts?sort=ASC and then we start adding other sorts and it slowly becomes a what can a client sent that works and what are all the query params? If you have front end and back end teams these query parameters become lost. GraphQL solves this by having everything defined in the schema and having a single endpoint. The schema defines everything around what extra data can you get (the I want this other data in my request). The other thing that comes out of the schema is all of the "query parameters" are defined and documented. To resolver to a field that has parameters, the schema has to define what is acceptable params. This is a huge benefit when there are different sorts. For example in posts what can you order by? In the restful world there's not a great way of defining a list, there are ways but none are great. In GraphQL you can create an enum that holds this list, which is huge. 
 
 ## Better client performance
+
+Along with the smaller payloads mentioned before the round trips to the server are reduced as well. In a RESTful world you would request a resource, that resource will give you IDs to then go to another resource and get the information for those requests. 
 
 ## Less Developer Time spent navigating APIs
 
 ## Legacy App Support
 
 ## API Documentation is easier
+
+## Better Error Handling
