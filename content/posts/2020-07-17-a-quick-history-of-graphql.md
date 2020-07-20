@@ -17,8 +17,6 @@ From the [GraphQL website](https://graphql.org/learn/):
 
 > GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data.
 
-
-
 # Why use GraphQL?
 
 In no order here are some of the reasons to use GraphQL:
@@ -29,10 +27,16 @@ In a RESTful world APIs have versions and as API evolve version numbers increase
 
 ## Smaller Payloads
 
+In RESTful api you get everything, every time. In GraphQL you must define your query making the response smaller, or at least the same side. This is huge for clients, depending on how mature your restful api is this may be a huge reduction the data transmitted to your client device.  
+
 ## Easier and more defined interfaces
+
+
 
 ## Better client performance
 
 ## Less Developer Time spent navigating APIs
 
 ## Legacy App Support
+
+## API Documentation is easier
