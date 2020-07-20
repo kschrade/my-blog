@@ -23,9 +23,16 @@ From the [GraphQL website](https://graphql.org/learn/):
 
 In no order here are some of the reasons to use GraphQL:
 
-* No more versioned APIs
-* Smaller Payloads
-* Easier and more defined interfaces
-* Better client performance
-* Less Developer Time spent navigating APIs
-* Legacy App Support
+## No more versioned APIs
+
+In a RESTful world APIs have versions and as API evolve version numbers increase. This increase will never stop as long as services evolve. This leads to problems when trying to use the API due to no knowing what version is the latest. This also leads to multiple version of each resource, version 1 of the resource from V1, version 2 of the resource from V2, etc. GraphQL solves this problem by having 1 graph that has 1 version. This leads to 1 version of each resources that evolves with your ecosystem. 
+
+## Smaller Payloads
+
+## Easier and more defined interfaces
+
+## Better client performance
+
+## Less Developer Time spent navigating APIs
+
+## Legacy App Support
