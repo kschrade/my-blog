@@ -37,9 +37,11 @@ In an RESTful world you have your base urls, say http://www.restful.com/api/v1, 
 
 ## Better client performance
 
-Along with the smaller payloads mentioned before the round trips to the server are reduced as well. In a RESTful world you would request a resource, that resource will give you IDs to then go to another resource and get the information for those requests. This is also client to server requests which normally are not in close proximity. 
+Along with the smaller payloads mentioned before the round trips to the server are reduced as well. In a RESTful world you would request a resource, that resource will give you IDs to then go to another resource and get the information for those requests. This is also client to server requests which normally are not in close proximity. GraphQL allows for one request to get all the data you need, no need for follow up requests. The other benefit from GraphQL that is not mentioned as much is the performance increase from having 1 client to server request and multiple server to server request vs multiple client to server requests. This is huge when your company has clients on the other side of seas from your servers.
 
 ## Less Developer Time spent navigating APIs
+
+
 
 ## Legacy App Support
 
