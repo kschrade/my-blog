@@ -3,7 +3,7 @@ template: post
 title: Week 1 GrpahQL Summit Federation chat Q/A
 slug: GQL-Summit-w1-qa
 draft: true
-date: 2020-07-31T11:47:44.516Z
+date: 2020-07-31T19:40:48.283Z
 description: Last week was the first week of the GraphQL summit. Here's a recap
   of all of the questions and answers I was involved in.
 category: GraphQL
