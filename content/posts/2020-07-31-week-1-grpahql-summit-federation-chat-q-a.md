@@ -12,7 +12,7 @@ tags:
   - Tech
   - GraphQL Summit
 ---
-In the past week, I attended the GraphQL Summit. In an effort to get out into the community, and complete a personal OKR, I answered a bunch of questions and praticipated in numorus discussions. Here are some of the highlights of the weeks in the federation channel.  
+In the past week, I attended the GraphQL Summit. To get out into the community, and complete a personal OKR, I answered a bunch of questions and participated in numerous discussions. Here are some of the highlights of the weeks in the federation channel.
 
 ### Rate limiting
 
@@ -22,9 +22,15 @@ A question arose of how do you do rate-limiting in the graph. There are a few th
 
 At StockX we use GraphQL to stitch all of our data together. We have replaced the mental mapping of data into a graph. For example, instead of getting a product UUID back from a search and then having to go get the product, you can just make a single query and get all the product information you want back. Grated that a super simple example but the general idea is there.
 
+
+![a cat sewing](https://media.giphy.com/media/l41YqlWuKy3qhIWsw/giphy.gif)
+
 ### Can you use GraphQL to do your service to service communication?
 
 Yes, you can! But be careful! You get the benefits from GraphQL, single source of truth, stitching of data, etc. All of this is great but it can also lead to a few problems. This will increase the number of requests on your gateway and federated servers. This will cause an increase in latency, more hops equal more time. The less obvious problem is you will sometimes create awkward paths that can cause problems. At StockX we witnessed service A making a call into our graph then as the graph is resolving the request it calls service A again. This loop leads to a few problems with sockets. So yea you can do it, just be careful.
+
+![power picture](https://i.ytimg.com/vi/QSKiDEMxUog/maxresdefault.jpg)
+
 
 ### How do federations work?
 
@@ -41,6 +47,8 @@ Federations allow for some great separation of concerns. Each concern can easily
 ### Can you set your federations in a monorepo?
 
 YESSSSSSS!!! We do it at StockX and I would recommend it! You don't have to use a monorepo, but I think it works way too well.
+
+![happy picture](https://media.giphy.com/media/UO5elnTqo4vSg/giphy.gif)
 
 ### How do you handle breaking changes?
 
