@@ -12,7 +12,7 @@ tags:
   - Tech
   - GraphQL Summit
 ---
-\[intro]
+In the past week, I attended the GraphQL Summit. In an effort to get out into the community, and complete a personal OKR, I answered a bunch of questions and praticipated in numorus discussions. Here are some of the highlights of the weeks in the federation channel.  
 
 ### Rate limiting
 
@@ -50,20 +50,6 @@ We have taken a page out of the Protocol Buffers and made almost everything in o
 
 I mainly work on the server-side of the GraphQL, so I can't speak about caching on the client-side but I can speak on the server-side. On the server-side, we cache our calls from GraphQL to a backend service. We also have an opt-in model with our caching. This is super helpful when trying to decide what to cache. We can watch our monitoring and then introduce caching where it is needed. We also introduce caching where we know it is needed. It also elevates the problem of caching personal information. When you have an opt-in model, it's super simple, you just don't opt-in.
 
-### What additional functionality can I add to GraphQL: Gateway?
+### What additional functionality can I add to GraphQL Gateway?
 
-
-
-
-
-
-
-
-
-additional gateway functionality
-
-https://discord.com/channels/733693158499549286/738397370621886476/738442664894005389
-
-scaler issue:
-
-https://discord.com/channels/733693158499549286/738397370621886476/738454021634785390
+The gateway is a fancy express server, and that means the sky's the limit! There are a few plug-ins that are already made around security, the two common ones I see are a bit limit and a query depth limit plug-in. After that, you can attach any express plug-in to your gateway.
