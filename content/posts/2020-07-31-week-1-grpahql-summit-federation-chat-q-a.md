@@ -12,26 +12,35 @@ tags:
   - Tech
   - GraphQL Summit
 ---
-rate limiting 
+\[intro]
 
-https://discord.com/channels/733693158499549286/738731569015160922/738781478548275222
+### Rate limiting 
 
-how are you useing graphQL?
+A question arose of how do you do rate-limiting in the graph. There are a few things you can to do rate limit in GraphQL. The easiest thing to do (and yes this is a cop-out) is put your graph behind an API gateway and let the gateway handle the limiting. If you wanted to roll your own solution you could get away with some apollo plug-ins.  This means you have to do EVERYTHING, and that's asking a lot.
 
-https://discord.com/channels/733693158499549286/738397370621886476/738426579310477372
+### How are you using GraphQL? 
 
-service to service communtication\
-https://discord.com/channels/733693158499549286/738397370621886476/738429802385768458
+At StockX we use GraphQL to stitch all of our data together. We have basically replaced the mental mapping of data into a graph. For example, instead of getting a product UUID back from a search and then having to go get the product, you can just make a single query and get all the product information you want back. Grated that a super simple example but the general idea is there.  
 
-how do federations work?
+### Can you use GraphQL to do your service to service communication?
 
-https://discord.com/channels/733693158499549286/738397370621886476/738431818721788006
+Yes, you can! But be careful! You get the benefits from GraphQL, single source of truth, stitching of data, etc. All of this is great but it can also lead to a few problems. This will increase the number of requests on your gateway and federated servers. This will cause an increase in latency, more hops equal more time. The less obvious problem is you will sometimes create awkward paths that can cause problems. At StockX we witnessed service A making a call into our graph then as the graph is resolving the request it calls service A again. This loop lead to a few problems with sockets. So yea you can do it, just be careful. 
 
-can you use it as an internal gateway?
+### How do federations work?
 
-https://discord.com/channels/733693158499549286/738397370621886476/738432478460641320
+You create a set of federated services that all serve up a portion of your full graph. The GraphQL gateway then pulls all the federations together and stitches all the schemas together into a single graph. 
 
-https://discord.com/channels/733693158499549286/738397370621886476/738433431972741232
+### How do you do a public and private Graph?
+
+
+
+
+
+
+
+
+
+
 
 public vs private \
 https://discord.com/channels/733693158499549286/738397370621886476/738434463339511909
