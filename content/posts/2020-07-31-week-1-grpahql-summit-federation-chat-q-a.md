@@ -24,7 +24,7 @@ At StockX we use GraphQL to stitch all of our data together. We have basically r
 
 ### Can you use GraphQL to do your service to service communication?
 
-Yes, you can! But be careful! You get the benefits from GraphQL, single source of truth, stitching of data, etc. All of this is great but it can also lead to a few problems. This will increase the number of requests on your gateway and federated servers. This will cause an increase in latency, more hops equal more time. The less obvious problem is you will sometimes create awkward paths that can cause problems. At StockX we witnessed service A making a call into our graph then as the graph is resolving the request it calls service A again. This loop lead to a few problems with sockets. So yea you can do it, just be careful. 
+Yes, you can! But be careful! You get the benefits from GraphQL, single source of truth, stitching of data, etc. All of this is great but it can also lead to a few problems. This will increase the number of requests on your gateway and federated servers. This will cause an increase in latency, more hops equal more time. The less obvious problem is you will sometimes create awkward paths that can cause problems. At StockX we witnessed service A making a call into our graph then as the graph is resolving the request it calls service A again. This loop leads to a few problems with sockets. So yea you can do it, just be careful. 
 
 ### How do federations work?
 
@@ -32,18 +32,9 @@ You create a set of federated services that all serve up a portion of your full 
 
 ### How do you do a public and private Graph?
 
+There are a few ways to go with this. The current way people seem to be doing this is by creating multiple gateways. These separate gateways consume only the federations they want to expose, ie the public gateway does not consume internal federations. The other way people have wanted to do this is by using a schema directive. This was opened as an [issue](https://github.com/apollographql/apollo-server/issues/2812) opened to do this. What the issue talks about is having a directive (an annotation in the schema) that would hide fields from public view. Personally, I think this would be a better way. Developers who create federations already use to this idea for things like `@external, @required, @provides`.
 
-
-
-
-
-
-
-
-
-
-public vs private \
-https://discord.com/channels/733693158499549286/738397370621886476/738434463339511909
+### Why use federations?
 
 how do you handel breaking changes? 
 
