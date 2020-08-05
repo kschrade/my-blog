@@ -14,6 +14,8 @@ tags:
 
 Hello Everyone!
 
-Welcome to my blog. This is my first post, so please check out my [about me](https://kyleschrade-blog.netlify.app/pages/about) page and my [contact me](https://kyleschrade-blog.netlify.app/pages/contacts) pages. I will be writing a few articles soon.  I'm hoping to have at least 1 post per month but no guarantees.  My topics will consist of items I work with on a daily basis. So GraphQL, node, monrepos and a bunch of other good things. Be prepared for a log of gifs as well! If you have anything you want me to blog about please feel free to contact me about it!
+Welcome to my blog. This is my first post, so please check out my [about me](https://kyleschrade-blog.netlify.app/pages/about) page and my [contact me](https://kyleschrade-blog.netlify.app/pages/contacts) pages. I will be writing a few articles soon. I'm hoping to have at least 1 post per month but no guarantees. My topics will consist of items I work with daily. So GraphQL, node, monrepos, and a bunch of other useful things. Be prepared for a log of gifs as well! If you have anything you want me to blog about, please feel free to contact me about it!
 
 Cheers!
+
+<!--EndFragment-->
