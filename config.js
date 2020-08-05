@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-  url: "https://lumen.netlify.com",
+  url: "https://kyleschrade-blog.netlify.app/",
   pathPrefix: "/my-blog",
   title: "Kyle Schrade's Blog",
   subtitle: "I blog about things that I work with, for better or worse.",
@@ -34,7 +34,7 @@ module.exports = {
       telegram: "",
       twitter: "notkyleschrade",
       github: "kschrade",
-      rss: "",
+      rss: "/feed",
       vkontakte: "",
       linkedin: "kyle-schrade-63a003aa",
       instagram: "kyleschrade",
