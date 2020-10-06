@@ -7,7 +7,9 @@ date: 2020-10-02T21:00:31.345Z
 description: "Highlighting some of the ups and downs of using graphQL for a year. "
 category: graphql
 tags:
-  - graphql tech reflection
+  - GraphQL
+  - tech
+  - reflection
 ---
 After using GraphQL for a year at StockX, it’s time to reflect a little on the good and the bad. We have had mainly good things come out of using GraphQL. 
 
