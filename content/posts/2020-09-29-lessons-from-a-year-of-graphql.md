@@ -10,6 +10,8 @@ tags:
   - GraphQL
   - tech
   - reflection
+  - Apollo Federation
+  - Apollo GraphQL
 ---
 After using GraphQL for a year at StockX, it’s time to reflect a little on the good and the bad. We have had mainly good things come out of using GraphQL. 
 
