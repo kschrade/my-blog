@@ -48,13 +48,11 @@ The in-memory cache loses a lot of its efficiency when this happens, mainly due 
 
 Well, if you look at the memoization function we created, it takes a cache and uses that to back its memoization logic. So if we make two memoization functions, one backed with an in-memory cache and one backed by our distributed cache, we can easily just apply them one after another. After they have been applied to a function, the logic on the server would first check the in-memory cache, then the distributed cache, and if both misses, make a call to the server and then cache the result in both in-memory and distributed caches.
 
-<!--StartFragment-->
-
 # Awe-inspiring benefits to this approach
 
 One of the best parts of this approach is how it allows your GraphQL ecosystem to cache things for each other. If we expand our picture a little bit to have more federations like so:
 
-<<picture here of multiple federations and a media service>>
+![](/media/2-different-federations.jpg)
 
 If federations A and B are making calls to the same endpoint in the underlying service, they can share that cache value. This is HUGE! For a practical example, say you have a search federation and a product federation. Suppose a user searches for a product on your site. That search query ends up calling your media service to get the URLs of that product's pictures. Using the approach we have described, this would get cached in the distributed cache. When the user then clicks on the product, a product query is issued. That product query would go to the product federation; the product federation would have to get the URLs for the product's pictures from the media service. But with our caching, it would fetch the response from the media service from the cache, not the media service.
 
