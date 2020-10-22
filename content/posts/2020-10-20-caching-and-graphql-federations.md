@@ -18,7 +18,7 @@ GraphQL Federations and caching present a fascinating problem; how do you cache 
 
 Every good journey has a starting point, and ours is a super simple ecosystem with a GraphQL gateway, a GraphQL federated service behind that gateway, and a service feeding data to that federation.
 
-<< picture goes here of gateway federation and service >>
+![](/media/basic-server.jpg)
 
 As you can see, every time a request comes into the gateway, it will always turn into a request to the underlying service.
 
@@ -26,7 +26,7 @@ As you can see, every time a request comes into the gateway, it will always turn
 
 When we look at the picture above, we quickly realize a one-to-one ratio of requests that come into the gateway and requests our underlying service. If we want to make the ratio more efficient balance of requests to the gateway and requests to the service, we will need to introduce a cache. We can easily introduce a local in-memory cache on the API call from our federation to the service under it. When we add that to our architecture diagram, it looks like this:
 
-<< picture goes here basic gateway federation with caching picture>>
+![](/media/server-with-cache.jpg)
 
 ## Memoization
 
@@ -38,11 +38,11 @@ When we talk about caching, in most cases, we are talking about memorization. Pe
 
 An in-memory cache is great until you have multiple instances of a federated service running.
 
-<<picture here of one vertical stack to one to multiple pods with just in-memory caches>>
+![](/media/multiple-federations.jpg)
 
 The in-memory cache loses a lot of its efficiency when this happens, mainly due to just having so many caches that are not shared. But don't worry; there is a solution to this! A distributed cache helps solve this problem! If you create a distributed cache layer under the current caches, you get something that looks like this:
 
-<<expand picture from above to have distributed cache>>
+![](/media/multiple-federations-and-distributed-cache.jpg)
 
 ## But how do we do this!?
 
@@ -62,9 +62,7 @@ If federations A and B are making calls to the same endpoint in the underlying s
 
 Now that we have some fantastic caching, we can make our system more efficient by introducing dataloader. Dataloader is a marvelous package used to batch requests together. We can weave this in right above our API layer but after our caching. Going back to the product and media example, if we request seven products and their images. If we have three cache hits and four misses, usually this would mean we make four calls to the media and products service. But dataloader comes to to the rescue here! When we insert it right before the API to bundle all four products up and make one call to the product service, we call the media service to get all the data. And the amazing this about all of this is the result of dataloader is cache INDIVIDUALLY! This is a massive deal because it makes our caching logic way less complicated. Due to everything being cached individually, the caching works for any sized group of items. Pictures make this easier to understand:
 
-
-
-<< expand picture to have DL>>
+![](/media/adding-dl.jpg)
 
 # We made it to the end
 
