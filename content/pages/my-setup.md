@@ -13,11 +13,9 @@ Coming Soon! Need to get all the names of things.
 
 I have a MacBook Pro (15-inch, 2017).
 
-|           |                                 |
-| --------- | ------------------------------- |
-| Processor | 2.8 GHz Quad-Core Intel Core i7 |
-| Memory    | 16 GB 2133 MHz LPDDR3           |
-| Graphics  | Intel HD Graphics 630 1536 MB   |
+- Processor: 2.8 GHz Quad-Core Intel Core i7
+- Memory: 16 GB 2133 MHz LPDDR3
+- Graphics: Intel HD Graphics 630 1536 MB
 
 ## Shared External screens
 
