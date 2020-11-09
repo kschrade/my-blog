@@ -2,7 +2,7 @@
 template: post
 title: Caching Strategies in a Federated GraphQL Architecture
 slug: caching-strategies-in-a-federated-graphql-architecture
-draft: true
+draft: false
 date: 2020-11-09T01:00:22.961Z
 description: Let's take a dive into caching and how you can use a remote cache
   to improve your GraphQL Federation performance.
