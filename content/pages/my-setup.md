@@ -1,6 +1,6 @@
 ---
 template: page
-title: My Setup
+title: My setup
 slug: my-setup
 draft: false
 ---
