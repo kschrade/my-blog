@@ -1,31 +1,43 @@
 // @flow strict
-import React from 'react';
-import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby';
-import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
-import styles from './Layout.module.scss';
+import React from "react";
+import Helmet from "react-helmet";
+import { withPrefix } from "gatsby";
+import type { Node as ReactNode } from "react";
+import { useSiteMetadata } from "../../hooks";
+import styles from "./Layout.module.scss";
+import favicon from "../images/favicon.ico";
 
 type Props = {
   children: ReactNode,
   title: string,
   description?: string,
-  socialImage? :string
+  socialImage?: string,
 };
 
-const Layout = ({
-  children,
-  title,
-  description,
-  socialImage
-}: Props) => {
+const Layout = ({ children, title, description, socialImage }: Props) => {
   const { author, url } = useSiteMetadata();
   const metaImage = socialImage != null ? socialImage : author.photo;
   const metaImageUrl = url + withPrefix(metaImage);
 
   return (
     <div className={styles.layout}>
-      <Helmet>
+      <Helmet
+        link={[
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "16x16",
+            href: `${favicon}`,
+          },
+          {
+            rel: "icon",
+            type: "image/png",
+            sizes: "32x32",
+            href: `${favicon}`,
+          },
+          { rel: "shortcut icon", type: "image/png", href: `${favicon}` },
+        ]}
+      >
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
