@@ -40,6 +40,11 @@ const Layout = ({ children, title, description, socialImage }: Props) => {
       >
         <html lang="en" />
         <title>{title}</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap"
+          rel="stylesheet"
+        />
         <meta name="description" content={description} />
         <meta property="og:site_name" content={title} />
         <meta property="og:image" content={metaImageUrl} />
