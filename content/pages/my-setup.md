@@ -7,7 +7,9 @@ draft: false
 
 ## Gaming PC
 
-Coming Soon! Need to get all the names of things.
+- 4095MB NVIDIA GeForce GTX 1070 (Gigabyte) X2
+- 16 GB of ram
+- Intel Core i7 @ 3.20GHz
 
 ## Development notebook
 
@@ -19,7 +21,7 @@ I have a MacBook Pro (15-inch, 2017).
 
 ## Shared External screens
 
-Coming Soon! Need to get names and models.
+I have 2 LG Ultra HD 24" ( 3840x2160 @ 60Hz )
 
 ## Audio Video
 
