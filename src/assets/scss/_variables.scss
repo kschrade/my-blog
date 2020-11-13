@@ -4,11 +4,12 @@
 
 // Colors
 $color-base: #fff;
+$color-base-black: #222;
 $color-primary: #7df9ff;
 $color-secondary: #98ff98;
 
 $color-white: #fff;
-$color-gray: lighten($color-base, 40%);
+$color-gray: lighten($color-base-black, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
 
@@ -16,8 +17,6 @@ $background-color: #242526;
 
 // Typographic
 $typographic-font-family: "Exo", sans-serif;
-// -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-//   Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;
@@ -38,7 +37,7 @@ $button-height: 35px;
 $button-border-radius: 20px;
 
 // Layout
-$layout-post-single-width: 1245px;
+$layout-post-single-width: 945px;
 $layout-post-width: $layout-post-single-width - 105px;
 
 $layout-width: 1070px;
