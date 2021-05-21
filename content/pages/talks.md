@@ -14,5 +14,5 @@ List of recorded talks:
   * A overview of how we used feature flags to ship "Broken" code to users and turn it on later.
 * [The power of schema: How to work in the future](https://www.youtube.com/watch?v=oe5C0_GPXjA) 
   *  A look at how nullablity in your schema can help or hurt your future queries and code.
-* Battle of Black Friday: Proactively Autoscaling StockX 
+* [Battle of Black Friday: Proactively Autoscaling StockX](https://www.youtube.com/watch?v=IqrKFBxf_Dk) 
   *  How we battle the onslought of traffic on Black Friday at StockX. 
