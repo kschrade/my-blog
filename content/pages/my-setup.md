@@ -7,7 +7,7 @@ draft: false
 
 ## Gaming PC
 
-- 4095MB NVIDIA GeForce GTX 1070 (Gigabyte) X2
+- NVIDIA GIGABYTE AORUS GeForce RTX 3070 Master 8G Graphics Card X2
 - 16 GB of ram
 - Intel Core i7 @ 3.20GHz
 
